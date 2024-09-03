@@ -27,3 +27,12 @@ jobs:
             -F appId="$ROOTPK_APP_ID" \
             -F secretKey="$ROOTPK_APP_SECRET_KEY" \
             -F file=@Readable.apk # Make sure this matches your APK's filename
+
+curl https://api.rootpk.com/icons/upload ^
+  -F appId=YOUR_APP_ID ^
+  -F secretKey=YOUR_APP_SECRET_KEY ^
+  -F file=@i.ibb.co/s66P3z8/letter-r-6.png
+curl https://api.rootpk.com/icons/upload `
+  -F appId=YOUR_APP_ID `
+  -F secretKey=YOUR_APP_SECRET_KEY `
+  -F file=@i.ibb.co/s66P3z8/letter-r-6.png
