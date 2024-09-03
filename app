@@ -28,11 +28,3 @@ jobs:
             -F secretKey="$ROOTPK_APP_SECRET_KEY" \
             -F file=@Readable.apk # Make sure this matches your APK's filename
 
-curl https://api.rootpk.com/icons/upload ^
-  -F appId=66d6e00de4d1432db5a37597 ^
-  -F secretKey=rootpk_7e44b204-e148-4c9a-bb32-78c38565bf2f ^
-  -F file=@i.ibb.co/s66P3z8/letter-r-6.png
-curl https://api.rootpk.com/icons/upload `
-  -F appId=66d6e00de4d1432db5a37597 `
-  -F secretKey=rootpk_7e44b204-e148-4c9a-bb32-78c38565bf2f `
-  -F file=@i.ibb.co/s66P3z8/letter-r-6.png
