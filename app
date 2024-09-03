@@ -14,7 +14,7 @@ jobs:
         with:
           repository: "{FintCircle}/{Readable}" # Replace with your repository's owner and name
           latest: true
-          fileName: "readable.applog" # Replace with your APK's filename
+          fileName: "Readable.apK" # Replace with your APK's filename
           out-file-path: "assets"
           #token: ${{ secrets.GITHUB_TOKEN }} # Required if your repo is private
       - name: Upload APK to the Rootpk Store
@@ -26,4 +26,4 @@ jobs:
           curl https://api.rootpk.com/apk/upload \
             -F appId="$ROOTPK_APP_ID" \
             -F secretKey="$ROOTPK_APP_SECRET_KEY" \
-            -F file=@myapp-arm64-v8a-release.apk # Make sure this matches your APK's filename
+            -F file=@Readable.apk # Make sure this matches your APK's filename
